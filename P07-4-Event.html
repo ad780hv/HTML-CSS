@@ -1,0 +1,25 @@
+<!-- file: P07-4-Event.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>P07-4: Event Javascript</title>
+    <script type="text/javascript">
+        function Warna(kode) {
+            document.getElementById("text_warna").style.color = kode;
+        }
+        function GantiOver() {
+            document.getElementById("teks_ganti").innerHTML = "Mouse melewati baris ini";
+        }
+        function GantiOut() {
+            document.getElementById("teks_ganti").innerHTML = "Tulisan ini akan berganti saat mouse digerakkan diatasnya";
+        }
+    </script>
+</head>
+<body>
+    <p id="teks_warna" onclick="warna('red')"
+    onMouseOver="Warna('blue')" onMouseOut="Warna('black')">Tulisan
+    berwarna hitam, dan akan berubah warna saat mouse digerakkan dan diklik diatasnya</p>
+    <p id="teks_ganti" onMouseOver="GantiOver()"
+    onMouseOut="GantiOut()">Tulisan ini akan berganti saat mouse digerakkan diatasnya</p>
+</body>
+</html>
