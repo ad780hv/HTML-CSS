@@ -1,0 +1,29 @@
+<!-- file: Po6-3-PopUp.html -->
+<html>
+<head>
+    <title>PopUp Box JavaScript</title>
+    <script type="text/javascript">
+    function CobaAlert() {
+        alert("Pengembangan Aplikassi Web");
+    }
+    function CobaConfirm() {
+        var jawaban = confirm("Anda sudah belajar ?")
+        if (jawaban == 1) { // Jika memilih OK
+            alert("Anda jawab Ya.");
+        } else {               // JIka memilih Cancel
+            alert("Anda jawab Tidak.");
+        
+        }
+    }
+function CobaPrompt() {
+    var nama = prompt("Siapa nama Anda ?", "");
+    alert ("Selamat datang, " + nama);
+}
+    </script>
+</head>
+<body>
+    <input type="button" onclick="CobaAlert()" value="Alert"/>
+    <input type="button" onclick="CobaConfirm()" value="Confirm"/>
+    <input type="button" onclick="CobaPrompt()" value="Promtp"/>
+</body>
+</html>
